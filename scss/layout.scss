@@ -62,6 +62,7 @@ $mainMinHeight: calc(100vh - (#{$hederHeight} + #{$footerHeight} + 51px));
             top: calc(100% - 3px);
             opacity: 0;
             transition: 0.3s;
+            z-index: 500;
 
             li {
               width: 100%;
@@ -116,6 +117,11 @@ $mainMinHeight: calc(100vh - (#{$hederHeight} + #{$footerHeight} + 51px));
           box-sizing: border-box;
           &.footer-logo {
             flex: 100px;
+          }
+          &.news {
+            p {
+              margin-bottom: 20px;
+            }
           }
           &.news input[type=text] {
             border: 0;
